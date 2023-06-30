@@ -1,0 +1,158 @@
+<!DOCTYPE html><html>
+  <head>
+    <title>Snooker Club</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Snooker Club</h1>
+      <nav>
+        <ul>
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#tournaments">Tournaments</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#coaching">Coaching</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="max"> <center>
+    <img src="snook" width="50%" height="70%"></center>
+     </div>
+    
+    <section id="membership">
+      <h2>Membership</h2>
+      <p>Join our club and get access to all our facilities and events.</p>
+      <a href="membership.html">Learn more</a>
+    </section>
+    
+    <section id="reservation">
+      <h2>Reservation</h2>
+      <p>Book a table for your snooker session online.</p>
+      <a href="reservation.html">Book now</a>
+    </section>
+    
+    <section id="tournaments">
+      <h2>Tournaments</h2>
+      <p>Participate in our snooker tournaments and win prizes.</p>
+      <a href="tournaments.html">View schedule</a>
+    </section>
+    
+    <section id="community">
+      <h2>Community</h2>
+      <p>Connect with other snooker fans and share your experiences.</p>
+      <a href="community.html">Visit forum</a>
+    </section>
+    
+    <section id="coaching">
+      <h2>Coaching</h2>
+      <p>Improve your snooker skills with our coaching resources.</p>
+      <a href="coaching.html">Explore resources</a>
+    </section>
+    
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Check out photos and videos from our snooker club.</p>
+      <a href="gallery.html">View gallery</a>
+    </section>
+    
+    <footer>
+      <p>&copy; 2021 Snooker Club. All rights reserved.</p>
+      Contact Us
+      <p>Get in touch with us:</p>
+      address:XXXXXXX<br></br>
+      contactno:999999999
+    </footer>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+    background-image: radial-gradient( rgba(62, 190, 89, 0),rgb(55, 82, 88));
+}
+.max{
+  padding-top: 40px;
+  margin-top: 40px;
+}
+
+header {
+  background-color: #85C1E9;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 50px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #85C1E9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #318CE7;
+}
+
+footer {
+  background-color: #F2F2F2;
+  color: #666;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+
+
+
+
+<script>
+/* Add smooth scrolling to nav links*/
+ $ ('nav a').on('click', function(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      800
+    );
+  }
+});
+</script>
